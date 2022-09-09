@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/700f9cc419.js" crossorigin="anonymous"></script>
+    <title>coffe shop</title>
+    <style>
+        .asli{
+            height: 100%;
+            width: 99%;
+        }
+        .dovom{
+            height: 146px;
+            width: 90%;
+            background-color:rgba(220, 138, 42, 1) ;
+            border: 1px solid rgba(220, 138, 42, 1);
+            border-radius: 40px;
+            margin-left: 6%;
+            font-size: 1.2rem ;
+            
+        }
+        #firstul{
+            float: right;
+            margin-top: 20px;
+        }
+
+        body{
+            font-size: 36px;
+            font-family: 'vasir';
+            background-image: linear-gradient(to top ,rgba(122, 84, 63, 1),rgba(222, 205, 193, 1) );
+            text-transform: capitalize;
+            
+        }
+        input{
+            width: 200px;
+            margin-top: 20px;
+        }
+        .emidrink{
+            text-align: center;
+        }
+
+
+        .sevomi{
+            height: 50px;
+            width: 90%;
+            background-color: rgba(140, 89, 61, 1);
+            border: 1px solid rgba(140, 89, 61, 1);
+            border-radius: 40px;
+            margin-left: 6%;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        a:link{
+            text-decoration: none;
+            text-decoration-color: inherit;
+        }
+
+        .row{
+            margin:auto;
+            left: 50%;
+            color: white;
+        }
+        .row .card{
+            margin-top: 20px;
+            background-color: rgba(122, 84, 63, 1);
+            border: 1px rgba(122, 84, 63, 1) solid;
+            border-radius: 0px 43px 0px 43px;
+            transition: 0.3s;
+            text-align: left;
+        }
+
+        .row h1{
+            font-size: 24px;
+        }
+        .row .card-img-top{
+            height: 200px;
+            margin-top: 10%;
+            border: 1px rgba(122, 84, 63, 1) solid;
+            border-radius: 0px 43px 0px 43px;
+            
+        }
+
+
+
+        .row .card:hover{
+            color: yellow;
+            cursor: pointer;
+            margin: 5px;
+            transition: 0.5s;   
+        }
+
+        .sevomi .content:hover , .page:hover , .menu:hover , .about:hover{
+            transition: 0.8s;
+            background-color: #ca955c;
+            cursor: pointer;
+            box-shadow: 1px 1px 1px #ca955c;
+            padding: 5px;
+            border: 1px solid #ca955c;
+            border-radius: 30px;
+
+        }
+        .sevomi .content , .page , .menu , .about{
+            transition: 0.3s;
+        }
+
+        #garme{
+            background-image: url(ax/nathan-dumlao-XOhI_kW_TaM-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 140%;
+            image-rendering: pixelated;
+        }
+
+        #sarde{
+            background-image: url(ax/sarde.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 99% 140%;
+            image-rendering: pixelated;
+        }
+
+        #cake2{
+            background-image: url(ax/cake.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 99% 140%;
+            image-rendering: pixelated;
+        }
+
+        #dessert{
+            background-image: url(ax/dessert.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 99% 140%;
+            image-rendering: pixelated;
+        }
+
+        #shake{
+            background-image: url(ax/shake.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 99% 140%;
+            image-rendering: pixelated;
+        }
+
+        #juice{
+            background-image: url(ax/juice.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 99% 140%;
+            image-rendering: pixelated;
+        }
+
+        .bar{
+            margin:1%;
+            left: 50%;
+            -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
+            background-color: rgba(255, 255, 255, .7);
+            height: 50px;
+            width: 100%;
+            border-radius: 30px;
+            font-size: 1rem;
+        } 
+        #logo{
+            width: 106px;
+            height: 105px;
+        }
+
+        .fa-map-marker-alt:hover{
+            padding-bottom: 18px;
+            transition: 0.5s;
+        }
+        .fa-map-marker-alt{
+            transition: 0.5s;
+            
+        }
+
+        #darkmode{
+            color: white;
+            background-color: black;
+            border: black solid 1px;
+            border-radius: 30px;
+            padding: 5px;
+            width: 100px;
+            height: 34px;
+        }
+
+.stars-outer {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+  font-size: 18px;
+}
+ 
+.stars-outer::before {
+  content: "\f006 \f006 \f006 \f006 \f006";
+}
+ 
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  font-size: 18px;
+}
+ 
+.stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  color: #f8ce0b;
+}
+
+.stars-outer::before {
+  content: "\f006 \f006 \f006 \f006 \f006";
+}
+ 
+.stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+}
+
+.card{
+    animation-name: avalin;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+    animation-fill-mode: none;
+    animation-play-state: inherit;
+}
+
+@keyframes avalin{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(2);
+    }
+}
+
+.comment{
+    background-color: #ca955c;
+    padding-right: 10px;
+    height: 30%;
+    padding-left: 15px;
+}
+
+.comment input{
+    width: 40%;
+    border-radius: 15px;
+}
+
+.comment label{
+    font-size: 24px;
+}
+
+textarea{
+    border-radius: 15px;
+    width: 40%;
+    height: 25%;
+}
+
+.comment button{
+    width: 100px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.comment button:hover{
+    background-color: rgb(65, 182, 65);
+}
+
+.history{
+    font-size: 24px;
+    background-color: #774918;
+    color: white;
+    padding-left: 15px; 
+}
+
+.telegram:hover{
+    background-color: #28a4e4;
+    
+    transition: 0.5ms;
+}
+.telegram{
+    transition: 0.5s;
+}
+.instagram:hover{
+    background-image: linear-gradient(to right,orange,yellow,#aa2fc3);
+    border-radius: 20px;
+    transition: 0.5s;
+    padding:10px 30px;
+
+}
+.instagram{
+    transition: 0.5s;
+    overflow: hidden;
+}
+.whats:hover{
+    background-color: #47c355;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.whats{
+    transition: 0.5s;
+}
+.email:hover{
+    background-color: #83e428;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.email{
+    transition: 0.5s;
+}
+
+
+.footer ul{
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ width: 250px;
+ float:right;
+ overflow:hidden;
+ direction:rtl;
+ font-size: 24px;
+}
+
+.footer li a{
+ display: block;
+ color: #000;
+ padding: 10px 16px;
+ text-decoration: none;
+ transition:0.5s; 
+ margin:5px;
+}
+
+.footer li a:hover{
+ color:#fff;
+ transition:0.5s;
+ padding:10px 30px;
+ box-shadow: 0 10px 10px rgba(117, 120, 123, 0.3);
+}
+
+.adres{
+    color: #fff;
+    width: 35%;
+    text-align: left;
+    margin-left: 15px;
+    font-size: 1.3rem;
+
+}
+.copy{
+    background-color: yellow;
+    color: red;
+    text-align: center;
+}
+
+
+#foot{
+border: #fff 2px solid;
+color: #fff;
+padding: 0px 0px 0px 0px;
+}
+
+.shobe .card img{
+    height: 500px;
+}
+
+.shobe .card{
+    background-color: #fff;
+    border-radius: 1px;
+    text-align: center;
+}
+
+.shobe .card-img:hover{
+    filter: blur(2px);
+
+}
+
+#iranflag{
+    height: 25px;
+    width: 30px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.card .card-text{
+    color: rgb(212, 212, 212);
+    font-size: 1.2rem;
+}
+
+    </style>
+</head>
+<body>
+    <div class="asli">
+        <div class="bag position-relative  dovom">
+            <div class="position-absolute top-0 start-0"><a href="index.html"><img src="ax/iran.png" alt="" id="iranflag"></a></div>
+            <div class="position-absolute top-0 start-50 translate-middle-x"><img src="ax/logo.png" alt="logo" id="logo"></div>
+            <div class="position-absolute top-0 end-0 " style="margin-right: 15px;"><a href="LOGIN.html" class="text-decoration-none text-reset" target="_blank">log in / sign up <i class='fas fa-sign-in-alt'></i></a></div>
+            <div class="position-absolute top-50 start-0 translate-middle-y" style="margin-left: 15px ;"><button id="darkmode"><a href="darkuk.html" class="text-decoration-none text-reset"> <i class="fas fa-moon"></i>dark</a></button></div>
+            <div class="position-absolute top-50 end-0 translate-middle-y" style="margin-right: 15px;"><a href="#shobe" class="text-decoration-none text-reset">branches <i class='fas fa-map-marker-alt'></i></a></div>
+    
+    
+        </div>
+        <div class="sevomi  mt-4">
+            <div class="val d-flex justify-content-around">
+                <div class="page"><a href="#tele" class="text-decoration-none text-reset"></a> social pages <i class='fab fa-telegram-plane'></i></div>
+                <div class="content"><a href="#foot" class="text-decoration-none text-reset">contact us <i class='fas fa-phone-volume'></i></a></div>
+                <div class="about"><a href="#histori" class="text-decoration-none text-reset">about us <i class='fas fa-info'></i></a></div>
+            </div>
+        </div>
+        <br>
+
+        <div class="bar sticky-top val d-flex justify-content-around">
+            <a href="#abmive" class="text-reset text-decoration-none" >juices</a>
+            <a href="#sheik" class="text-reset text-decoration-none" >shakes</a>
+            <a href="#deser" class="text-reset text-decoration-none" >desserts</a>
+            <a href="#cake" class="text-reset text-decoration-none" >cake</a>
+            <a href="#noshidani sard" class="text-reset text-decoration-none" >cold drinks</a>
+            <a href="#noshidani garm" class="text-reset text-decoration-none" >Hot drinks</a>
+            <a href="#logo" class="text-reset text-decoration-none bala"><i class='fas fa-angle-up'></i></a>
+        </div>
+
+
+       
+        <br>
+        <hr>
+        <hr>
+        <hr><h1 style="text-align: center; font-size: 82px;" id="noshidani garm">Hot drinks</h1>
+        <br><br>
+        
+        <div class="row row-cols-md-5 row-cols-xs-12 row-cols-sm-9 row-cols-3" id="garme">
+            <div class="card ms-2">
+                <img src="ax2/اسپرسو.jfif" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Espresso</h1>
+                    <p class="card-text">25/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+                
+            </div>
+            <div class="card ms-2">
+                <img src="ax2/ماکیاتو.jfif" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Macchiato</h1>
+                    <p class="card-text">30/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax2/آمریکانیو.jfif" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Americano</h1>
+                    <p class="card-text">30/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax2/کورتادو.jfif" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Cortado</h1>
+                    <p class="card-text">32/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax2/چای2.jfif" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Tea Latte</h1>
+                    <p class="card-text">28/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax2/شیر.jfif" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>hot milk</h1>
+                    <p class="card-text">20/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax2/چای.jfif" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>tea</h1>
+                    <p class="card-text">15/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/هاتچاکلت.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Hot Chocolate</h1>
+                    <p class="card-text">34/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+         </div>
+         <br><br>
+         <hr>
+         <hr>
+         <hr>
+         <hr>
+         <hr><h1 style="text-align: center; font-size: 82px;" id="noshidani sard">Cold drink</h1>
+         <br><br>
+         <div class="row row-cols-md-5 row-cols-xs-12 row-cols-sm-9 row-cols-3" id="sarde" >
+            <div class="card ms-2">
+                <img src="ax/ice late.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>ice late</h1>
+                    <p class="card-text">32/000T</p>                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/ice moca.jfif" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>ice moka</h1>
+                    <p class="card-text">30/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/ice ameri.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>cold americano</h1>
+                    <p class="card-text">35/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/macha.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Machagato</h1>
+                    <p class="card-text">37/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/ice choco.jfif" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>cold chocolate</h1>
+                    <p class="card-text">40/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/milk.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>cold milk</h1>
+                    <p class="card-text">25/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/ice coffee.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>cold coffee</h1>
+                    <p class="card-text">45/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/ice karamel.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>ice caramel</h1>
+                    <p class="card-text">38/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+         </div>
+         <br><br>
+         <hr>
+         <hr>
+         <hr>
+         <hr>
+         <hr><h1 style="text-align: center; font-size: 82px;" id="cake">cake</h1>
+         <br><br>
+         <div class="row row-cols-md-5 row-cols-xs-12 row-cols-sm-9 row-cols-3" id="cake2">
+            <div class="card ms-2">
+                <img src="ax/cake ch.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Chocolate</h1>
+                    <p class="card-text">30/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/cake gh.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>coffee</h1>
+                    <p class="card-text">30/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/cake ha.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>carrot</h1>
+                    <p class="card-text">35/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/cake bro.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>brownie</h1>
+                    <p class="card-text">32/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/cake ch.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Cheesecake</h1>
+                    <p class="card-text">40/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/cake moka.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>moka</h1>
+                    <p class="card-text">38/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/tart.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>tart</h1>
+                    <p class="card-text">25/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/cake not.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Nutella</h1>
+                    <p class="card-text">45/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+         </div>
+         <br><br>
+         <hr>
+         <hr>
+         <hr>
+         <hr>
+         <hr><h1 style="text-align: center; font-size: 82px;" id="deser">Dessert</h1>
+         <br><br>
+         <div class="row row-cols-md-5 row-cols-xs-12 row-cols-sm-9 row-cols-3" id="dessert" >
+            <div class="card ms-2">
+                <img src="ax/cafe gelase.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Cafe Glace</h1>
+                    <p class="card-text">40/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/donat.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Ice cream donut</h1>
+                    <p class="card-text">50/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/vafel.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>waffle</h1>
+                    <p class="card-text">60/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/bro ba.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Ice cream brownie</h1>
+                    <p class="card-text">55/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/skop.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Scoopy ice cream</h1>
+                    <p class="card-text">10/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/tiramiso.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Tiramisu</h1>
+                    <p class="card-text">40/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+         </div>
+         <br><br>
+         <hr>
+         <hr>
+         <hr>
+         <hr>
+         <hr><h1 style="text-align: center; font-size: 82px;" id="sheik">shake</h1>
+         <br><br>
+         <div class="row row-cols-md-5 row-cols-xs-12 row-cols-sm-9 row-cols-3" id="shake">
+            <div class="card ms-2">
+                <img src="ax/sh sho.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Chocolate</h1>
+                    <p class="card-text">45/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/sh mo.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>banana</h1>
+                    <p class="card-text">45/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/sh ba.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>peanut</h1>
+                    <p class="card-text">60/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/sh gh.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>coffee</h1>
+                    <p class="card-text">45/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/sh toot.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Strawberry</h1>
+                    <p class="card-text">40/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/sh vanil.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>vanilla</h1>
+                    <p class="card-text">35/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/sh blo.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>blueberry</h1>
+                    <p class="card-text">60/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+         </div>
+         <br><br>
+         <hr>
+         <hr>
+         <hr>
+         <hr>
+         <hr><h1 style="text-align: center; font-size: 82px;" id="abmive">Mocktails and juice</h1>
+         <br><br>
+         <div class="row row-cols-md-5 row-cols-xs-12 row-cols-sm-9 row-cols-3" id="juice">
+            <div class="card ms-2">
+                <img src="ax/fasl.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>seasonal fruit</h1>
+                    <p class="card-text">50/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/limonad.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Lemonade</h1>
+                    <p class="card-text">50/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/mix.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>cocktail mix</h1>
+                    <p class="card-text">55/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/anar.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Pomegranate</h1>
+                    <p class="card-text">45/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/red.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>red cocktail</h1>
+                    <p class="card-text">50/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/mari.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>margarita cocktail</h1>
+                    <p class="card-text">65/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/nana.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>Mint cocktail</h1>
+                    <p class="card-text">50/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="card ms-2">
+                <img src="ax/mavad.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1>temple cocktail</h1>
+                    <p class="card-text">70/000T</p>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                      </div>
+                </div>
+            </div>
+         </div>
+         <br><br>
+         <hr>
+         <h1 style="text-align:center;" id="shobe">branches</h1>
+         <hr>
+         <div class="row shobe">
+            <div class="col-xs-3 col-md-3 ">
+              <div class="card">
+                <div class="card-body">
+                  <img src="ax/shomal.jpg" alt="" class="card-img">
+                  <div class="card-img-overlay">
+                    <p class="card-text" style="color: white;">East branch</p>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="col-xs-3 col-md-3 ">
+              <div class="card">
+                <div class="card-body">
+                  <img src="ax/jonob.jpg" alt="" class="card-img">
+                  <div class="card-img-overlay">
+                    <p class="card-text" style="color:white;">North branch</p>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="col-xs-3 col-md-3 ">
+              <div class="card">
+                <div class="card-body">
+                  <img src="ax/sharq.jpg" alt="" class="card-img">
+                  <div class="card-img-overlay">
+                    <p class="card-text" style="color:white;">South branch</p>
+
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="col-xs-3 col-md-3 ">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="ax/qarb.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                        <p class="card-text" style="color:white;">West branch</p>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+          </div>
+        </div>
+
+         <hr>
+         <br>
+         <div class="comment">
+            <p>Thank you for writing your comments and suggestions to help us provide you with better services</p>
+             <label>first name and last name</label><br>
+             <input type="text">
+             <br>
+             <label>email</label><br>
+             <input type="email" placeholder="example@gmail.com">
+             <br><br>
+             <textarea name="nazar" id="nazar" cols="30" rows="10" placeholder="Write here ..."></textarea><br>
+             <button type="submit">send</button>
+         </div>
+         <br>
+         <hr>
+         <br>
+
+         <div class="history" id="histori">
+             <h1>History of the coffee shop</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quisquam corrupti voluptatem harum impedit nisi, inventore ipsum delectus doloribus eveniet sunt quasi doloremque quaerat molestias ducimus! Fuga placeat omnis voluptatibus quis aliquid ratione numquam fugit in asperiores ad! Suscipit quo debitis repellendus. Omnis dolores quasi esse est tempore repudiandae, voluptate deleniti, tempora maxime iusto ipsa beatae possimus corrupti excepturi, repellendus error cupiditate quod iste incidunt labore sit sint unde. Ratione totam impedit unde, suscipit molestiae nesciunt magnam officiis aspernatur, sequi vel sapiente cumque dolores necessitatibus velit perspiciatis ducimus soluta est ex iure. Harum dolorum minima ab illo consequuntur, iure qui illum cupiditate doloremque rerum beatae doloribus nobis nihil omnis numquam maxime accusantium error esse officiis accusamus. Ratione pariatur ipsam reiciendis aspernatur minima repellendus quidem nemo adipisci iure, eveniet labore repellat dolores, excepturi tempora corrupti architecto modi distinctio? Tempora quae corrupti quasi ipsum necessitatibus id quam amet culpa quibusdam nemo ratione voluptate, vel, illo omnis nam? Iusto excepturi, quas molestiae ex dolorum veritatis sunt voluptatibus doloremque consequatur rerum eaque voluptate perspiciatis, delectus itaque laudantium? Odio tempore illum eveniet quaerat officia inventore. Nihil laborum eligendi itaque necessitatibus minima obcaecati maxime illum, nesciunt vitae neque odit corrupti omnis temporibus non excepturi, in cupiditate vero, distinctio ex alias aut animi tempora autem quo. Praesentium ullam accusantium, delectus magnam voluptate perferendis in officia autem ratione possimus expedita rem, quos voluptatem et id quidem. Dolor officia ut reiciendis obcaecati aut, laboriosam maiores amet commodi architecto debitis quam error doloribus minima dignissimos, odit incidunt delectus, molestiae magni vero voluptates. Unde laudantium sed, ad, mollitia omnis eveniet quod harum sequi aliquam illum fugiat consequatur, excepturi possimus nisi quos?</p>
+         </div>
+         
+         <br>
+         <div class="bag position-relative footer" id="foot">
+            <div class="position-absolute top-0 start-0 adres"> 
+                <p>address:Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum laboriosam reprehenderit suscipit impedit totam quis?</p>
+            </div>
+            <div class="position-absolute top-0 end-0 ">
+                <ul>
+                    <li><a href="tel:+989353327947" class="text-decoration-none text-reset">coll:+989353327947</a></li>
+                    <li><a href="https://t.me/AMIRHOSSEIN_EMK" class="text-decoration-none text-reset telegram" id="tele" target="_blank"><i class="fab fa-telegram-plane"></i> telegram</a></li>  
+                    <li><a href="#" class="text-decoration-none text-reset instagram"><i class="fab fa-instagram"></i> instagram</a></li>
+                    <li><a href="https://wa.link/8nd32i" class="text-decoration-none text-reset whats" target="_blank"><i class="fab fa-whatsapp"></i> whats app</a></li>
+                    <li><a href="mailto:amirhossein.emkani@gmail.com" class="text-decoration-none text-reset email" target="_blank">@ Email</a></li>
+                </ul>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <hr>
+        <hr>
+    </div>
+
+    <script src="js/query-2.2.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js "></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+ window.addEventListener('beforeunload' , function(event){
+    event.preventDefault();
+    event.returnValue = '';
+});
+
+
+
+
+
+
+
+
+
+
+       
+        
+    </script>
+ 
+    
+</body>
+</html>
+
+
+
+

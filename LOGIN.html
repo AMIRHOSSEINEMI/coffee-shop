@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/700f9cc419.js" crossorigin="anonymous"></script>
+    <title>coffee shop</title>
+    <style>
+        body{
+            background-image: url(ax/nathan-dumlao-XOhI_kW_TaM-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 140%;
+            image-rendering: pixelated;
+        }
+
+        .log{
+            margin: auto;
+            left: 50%;
+            width: 50%;
+            height: 550px;
+            background-color: rgba(255, 255, 255, .7);
+            margin-top: 2.5%;
+            border: #7A543F 1px solid;
+            border-radius: 30px;
+            text-align: center;
+            -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
+            font-size: 20px;            
+        }
+        .log h1{
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Monotype Corsiva';
+           
+        }
+
+        .log input{
+            background-color: #DC8A2A;
+            border: #DC8A2A 1px solid;
+            border-radius: 30px;
+            width: 80%;
+            height: 30px;
+        }
+
+
+        button{
+            width: 80%;
+            background-color: green;
+            border: green 1px solid;
+            border-radius: 30px;
+        }
+        input{
+            padding: 5px;
+        }
+
+        .logo{
+            width: 106px;
+            height: 105px;
+        }
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="asli">
+        <div class="log">
+
+            <img src="ax/logo.png" alt="" class="logo">
+            <br><br>
+            <form id="form">
+                <label>USER NAME/EMAIL</label><br>
+                <input type="text" id="user" required>
+                <br><br>
+                <label>PASSWORD</label><br>
+                <input type="password" id="pass" required>
+                <br><br>
+                <button type="submit">ENTER</button>
+                <br><br><br><br>
+                <a href="#">FORGOT PASS/USER NAME</a>
+            </form>
+
+        </div>
+    </div>
+    <script src="js/query-2.2.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js "></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <body>
+        <script>
+        const form1 = document.getElementById('form');
+        form1.addEventListener('submit', validate);
+        function validate(event){
+            const user = document.getElementById('user');
+            const pass = document.getElementById('pass');
+            if(user.value.length < 6 || user.value.length > 16){
+                event.preventDefault();
+                alert('لطفا مقدار وروردی خود را چک کنید');
+                user.focus();
+            }
+            if(pass.value.length < 6 || pass.value.length > 16){
+                event.preventDefault();
+                alert('رمز باید بین 6 تا 16 عدد باشد');            
+            }
+        }
+        const form = document.querySelector('form');
+
+
+        
+        </script>
+
+
+
+   
+    
+</body>
+</html>
